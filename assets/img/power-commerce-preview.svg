@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#17243A"/>
+    </linearGradient>
+    <linearGradient id="cy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#3B82F6" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.7" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#00D4FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#grid)"/>
+  <rect width="1200" height="600" fill="url(#glow)"/>
+
+  <!-- abstract tech circles -->
+  <circle cx="985" cy="190" r="130" fill="none" stroke="#00D4FF" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="985" cy="190" r="90" fill="none" stroke="#3B82F6" stroke-opacity="0.45" stroke-width="1"/>
+  <circle cx="985" cy="190" r="42" fill="none" stroke="#00D4FF" stroke-opacity="0.7" stroke-width="1.5"/>
+  <circle cx="985" cy="190" r="7" fill="#00D4FF"/>
+  <line x1="985" y1="60" x2="985" y2="148" stroke="#00D4FF" stroke-opacity="0.35"/>
+  <line x1="1075" y1="255" x2="1120" y2="330" stroke="#3B82F6" stroke-opacity="0.35"/>
+
+  <!-- testing UI card -->
+  <g transform="translate(120 150)">
+    <rect width="330" height="220" rx="14" fill="#17243A" stroke="#3B82F6" stroke-opacity="0.4"/>
+    <rect width="330" height="40" rx="14" fill="#111B2D"/>
+    <circle cx="24" cy="20" r="5" fill="#E05C5C"/>
+    <circle cx="44" cy="20" r="5" fill="#E3C98C"/>
+    <circle cx="64" cy="20" r="5" fill="#4FD1A0"/>
+    <text x="90" y="25" fill="#94A3B8" font-family="monospace" font-size="13">qa-runner — test suite</text>
+
+    <rect x="24" y="62" width="150" height="12" rx="6" fill="#3B82F6" fill-opacity="0.55"/>
+    <rect x="188" y="62" width="118" height="12" rx="6" fill="#111B2D"/>
+
+    <circle cx="34" cy="106" r="8" fill="none" stroke="#00D4FF" stroke-width="2"/>
+    <path d="M30 106l3 3 6-7" stroke="#00D4FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="54" y="100" width="180" height="10" rx="5" fill="#94A3B8" fill-opacity="0.35"/>
+
+    <circle cx="34" cy="138" r="8" fill="none" stroke="#00D4FF" stroke-width="2"/>
+    <path d="M30 138l3 3 6-7" stroke="#00D4FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="54" y="132" width="140" height="10" rx="5" fill="#94A3B8" fill-opacity="0.35"/>
+
+    <circle cx="34" cy="170" r="8" fill="none" stroke="#E05C5C" stroke-width="2"/>
+    <line x1="30" y1="166" x2="38" y2="174" stroke="#E05C5C" stroke-width="2" stroke-linecap="round"/>
+    <line x1="38" y1="166" x2="30" y2="174" stroke="#E05C5C" stroke-width="2" stroke-linecap="round"/>
+    <rect x="54" y="164" width="120" height="10" rx="5" fill="#94A3B8" fill-opacity="0.35"/>
+  </g>
+
+  <!-- pass rate badge -->
+  <g transform="translate(520 360)">
+    <rect width="180" height="72" rx="12" fill="#17243A" stroke="#00D4FF" stroke-opacity="0.45"/>
+    <text x="22" y="32" fill="#94A3B8" font-family="monospace" font-size="12">PASS RATE</text>
+    <text x="22" y="56" fill="#00D4FF" font-family="monospace" font-size="22" font-weight="bold">98.4%</text>
+    <circle cx="146" cy="40" r="20" fill="none" stroke="url(#cy)" stroke-width="4"
+      stroke-dasharray="113 126" transform="rotate(-90 146 40)"/>
+  </g>
+
+  <!-- floating dots -->
+  <circle cx="720" cy="120" r="4" fill="#00D4FF" fill-opacity="0.7"/>
+  <circle cx="80" cy="470" r="5" fill="#3B82F6" fill-opacity="0.6"/>
+  <circle cx="1120" cy="470" r="4" fill="#00D4FF" fill-opacity="0.5"/>
+  <circle cx="620" cy="520" r="3" fill="#94A3B8" fill-opacity="0.5"/>
+
+  <text x="600" y="72" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="15" letter-spacing="8">QUALITY • ASSURANCE • TESTING</text>
+</svg>

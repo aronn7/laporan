@@ -4,448 +4,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laporan Magang/Industri — KPP Pratama Jakarta Kebayoran Baru Satu</title>
+  <title>INTERNSHIP REPORT — Industrial Experience &amp; Professional Journey</title>
   <meta name="description"
-    content="Presentasi digital laporan magang/industri siswa SMK RPL di KPP Pratama Jakarta Kebayoran Baru Satu.">
+    content="Portal dokumentasi laporan magang/industri: KPP Pratama Jakarta Kebayoran Baru Satu & PT Power Commerce Asia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portal.css">
 </head>
 
-<body>
+<body class="portal-body">
 
-  <!-- ================= LOADING ================= -->
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <div class="loader-ring"></div>
-      <div class="loader-ring gold"></div>
-      <p class="loader-text">MEMUAT PRESENTASI</p>
+  <!-- decorative background -->
+  <div class="portal-bg" aria-hidden="true">
+    <div class="pb-gradient"></div>
+    <div class="pb-grid"></div>
+    <div class="pb-lines">
+      <span></span><span></span><span></span><span></span>
     </div>
+    <div class="pb-shape pb-shape-1"></div>
+    <div class="pb-shape pb-shape-2"></div>
+    <div class="pb-shape pb-shape-3"></div>
+    <div class="pb-glow pb-glow-1"></div>
+    <div class="pb-glow pb-glow-2"></div>
+    <div class="pb-particles" id="pbParticles"></div>
   </div>
 
-  <!-- ================= NAVBAR ================= -->
-  <header class="navbar" id="navbar">
-    <div class="navbar-brand">
-      <span class="brand-mark">PM</span>
-      <span class="brand-text">LAPORAN<b>MAGANG</b></span>
+  <!-- ================= TOP BAR ================= -->
+  <header class="portal-nav">
+    <div class="portal-brand">
+      <span class="pb-mark">IR</span>
+      <span class="pb-text">INTERNSHIP<b>REPORT</b></span>
     </div>
-    <nav class="navbar-links" id="navLinks">
-      <a href="#beranda" class="nav-link">Beranda</a>
-      <a href="#anggota" class="nav-link">Anggota</a>
-      <a href="#latar" class="nav-link">Latar Belakang</a>
-      <a href="#tujuan" class="nav-link">Tujuan</a>
-      <a href="#manfaat" class="nav-link">Manfaat</a>
-      <a href="#divisi-pelayanan" class="nav-link">Divisi</a>
-      <a href="#kendala" class="nav-link">Kendala</a>
-      <a href="#dokumentasi" class="nav-link">Dokumentasi</a>
-      <a href="#kesimpulan" class="nav-link">Kesimpulan</a>
+    <nav class="portal-links">
+      <a href="#reports" class="pl-link">Report Selection</a>
+      <a href="#about" class="pl-link">About This Portfolio</a>
     </nav>
-    <div class="navbar-actions">
-      <button class="icon-btn" id="btnFullscreen" title="Mode Layar Penuh (F)"><span class="ic"
-          data-icon="expand"></span></button>
-      <button class="hamburger" id="btnMenu" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
   </header>
-  <div class="mobile-menu" id="mobileMenu"></div>
 
-  <!-- ================= PROGRESS ================= -->
-  <div class="progress-wrap">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
-  <div class="page-indicator" id="pageIndicator">01 / 11</div>
+  <!-- ================= HERO ================= -->
+  <main class="portal-main">
 
-  <!-- ================= SLIDES ================= -->
-  <main class="deck" id="deck">
-
-    <!-- ============ SLIDE 1 : HERO ============ -->
-    <section class="slide slide-hero" id="beranda" data-title="Beranda">
-      <div class="hero-corner hero-corner-tl"></div>
-      <div class="hero-corner hero-corner-tr"></div>
-      <div class="hero-corner hero-corner-bl"></div>
-      <div class="hero-corner hero-corner-br"></div>
-      <div class="hero-bg parallax" style="background-image:url('assets/img/gedung.jpg')"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-arch-lines"></div>
-      <div class="hero-glow"></div>
-      <div class="hero-content">
-        <div class="sec-label hero-sec-label reveal"><span class="sec-num">01</span><span
-            class="sec-slash">/</span><span class="sec-name">INTRODUCTION</span><span class="sec-line"></span></div>
-        <p class="hero-kicker reveal">Praktik Kerja Lapangan &nbsp;•&nbsp; SMK Negeri 20 Jakarta</p>
-        <h1 class="hero-title">
-          <span class="line reveal d1">LAPORAN</span>
-          <span class="line reveal d2 gold-grad">MAGANG / INDUSTRI</span>
-        </h1>
-        <div class="hero-divider reveal d2"><span class="h-line"></span><span class="h-diamond">◆</span><span
-            class="h-line"></span></div>
-        <p class="hero-edition reveal d3">INDUSTRIAL INTERNSHIP REPORT • 2026</p>
-        <div class="hero-sub reveal d3">
-          <span class="hero-sub-tag">REKAYASA PERANGKAT LUNAK</span>
-        </div>
-        <p class="hero-instansi reveal d4">KPP PRATAMA JAKARTA KEBAYORAN BARU SATU</p>
-        <div class="hero-cta reveal d5">
-          <a href="#anggota" class="btn btn-gold nav-next-btn">MULAI PRESENTASI <span class="arrow ic ic-inline"
-              data-icon="arrowRight"></span></a>
-          <a href="#kesimpulan" class="btn btn-ghost nav-jump" data-target="kesimpulan">Langsung ke Penutup</a>
-        </div>
-      </div>
-      <div class="scroll-hint">
-        <div class="hero-scroll-line">
-          <span class="scroll-stem"></span>
-          <p>GULIR KE BAWAH</p>
-        </div>
-      </div>
+    <section class="portal-hero" id="top">
+      <p class="ph-eyebrow" data-reveal>PORTFOLIO • 2026</p>
+      <h1 class="ph-title" data-reveal>
+        <span class="ph-line">INTERNSHIP</span>
+        <span class="ph-line ph-gradient">REPORT</span>
+      </h1>
+      <div class="ph-divider" data-reveal><span></span><i>◆</i><span></span></div>
+      <p class="ph-subtitle" data-reveal>INDUSTRIAL EXPERIENCE &amp; PROFESSIONAL JOURNEY</p>
+      <p class="ph-desc" data-reveal>
+        Dokumentasi perjalanan, pengalaman, pembelajaran, dan kegiatan selama melaksanakan magang di lingkungan kerja
+        profesional.
+      </p>
+      <p class="ph-scroll" data-reveal aria-hidden="true"><span></span>SCROLL</p>
     </section>
 
-    <!-- ============ SLIDE 2 : ANGGOTA ============ -->
-    <section class="slide" id="anggota" data-title="Anggota Kelompok">
-      <div class="slide-inner">
-        <header class="slide-head">
-          <div class="sec-label reveal"><span class="sec-num">02</span><span class="sec-slash">/</span><span
-              class="sec-name">PROFIL TIM</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Profil Tim</p>
-          <h2 class="slide-title reveal d1">ANGGOTA <span class="gold-grad">KELOMPOK</span></h2>
-          <p class="slide-desc reveal d2">Empat peserta magang dari jurusan Rekayasa Perangkat Lunak yang melaksanakan
-            kegiatan magang di KPP Pratama Jakarta Kebayoran Baru Satu.</p>
-          <div class="member-control-bar reveal d3">
-            <div class="member-tip">
-              <span class="ic ic-inline" data-icon="sparkle"></span>
-              <span>Arahkan kursor atau klik kartu untuk efek <b>Putar 3D &amp; Pop!</b></span>
-            </div>
-            <div class="member-actions">
-              <button class="btn-action-pill" id="btnFlipAll" type="button" title="Putar semua kartu">
-                <span class="ic ic-inline" data-icon="rotate"></span> Putar
-              </button>
-              <button class="btn-action-pill" id="btnSpinAll" type="button" title="Pop 360 derajat semua kartu">
-                <span class="ic ic-inline" data-icon="zap"></span> Pop
-              </button>
-            </div>
-          </div>
-        </header>
-        <div class="member-grid" id="memberGrid"><!-- diisi JS --></div>
+    <!-- ================= REPORT SELECTION ================= -->
+    <section class="portal-section" id="reports">
+      <div class="ps-head" data-reveal>
+        <p class="ps-sec-label"><span class="ps-num">01</span><span class="ps-slash">/</span><span
+            class="ps-name">REPORT
+            SELECTION</span><span class="ps-rule"></span></p>
+        <h2 class="ps-title">CHOOSE YOUR <span class="ps-accent">REPORT</span></h2>
+        <p class="ps-sub">Dua laporan magang dengan tema, konten, dan identitas visual yang berbeda.</p>
       </div>
-    </section>
 
-    <!-- ============ SLIDE 3 : LATAR BELAKANG ============ -->
-    <section class="slide slide-alt" id="latar" data-title="Latar Belakang">
-      <div class="slide-inner two-col">
-        <div class="col-text">
-          <div class="sec-label reveal"><span class="sec-num">03</span><span class="sec-slash">/</span><span
-              class="sec-name">ABOUT THE INTERNSHIP</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Pendahuluan</p>
-          <h2 class="slide-title left reveal d1">LATAR <span class="gold-grad">BELAKANG</span></h2>
-          <div class="lb-text">
-            <div class="quote-watermark" aria-hidden="true">“</div>
-            <p class="reveal d2">Magang / industri merupakan bagian penting dari kurikulum SMK yang menjembatani proses
-              belajar di sekolah dengan dunia kerja yang sesungguhnya. Melalui kegiatan ini, siswa memperoleh
-              <b>pengalaman kerja langsung</b> yang tidak sepenuhnya dapat diperoleh di dalam kelas.
-            </p>
-            <p class="reveal d3">Ilmu dan keterampilan yang diperoleh di bangku sekolah — khususnya dari jurusan
-              Rekayasa Perangkat Lunak — dapat <b>diterapkan nyata</b> dalam situasi kerja profesional, sekaligus
-              melatih siswa mengenal lingkungan kerja yang menuntut kedisiplinan, etika, dan tanggung jawab.</p>
-            <p class="reveal d4">Selain keterampilan teknis, magang juga mengembangkan <b>keterampilan nonteknis</b>
-              seperti komunikasi, kerja sama tim, dan manajemen waktu.</p>
-            <p class="reveal d5">KPP Pratama Jakarta Kebayoran Baru Satu dipilih sebagai tempat magang karena merupakan
-              <b>instansi pemerintahan di bidang perpajakan</b> yang memiliki sistem administrasi dan budaya kerja
-              profesional, sehingga menjadi sarana belajar yang baik bagi siswa.
-            </p>
+      <div class="report-grid">
+
+        <!-- CARD 1 — KPP -->
+        <a class="report-card rc-kpp" href="kpp.html" data-reveal aria-label="Buka laporan KPP Pratama">
+          <div class="rc-thumb">
+            <img src="assets/img/gedung.jpg" alt="Gedung KPP Pratama Jakarta Kebayoran Baru Satu" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="rc-thumb-overlay"></div>
+            <span class="rc-index">REPORT <b>01</b></span>
+            <span class="rc-palette" aria-hidden="true"><i></i><i></i><i></i></span>
           </div>
-          <!-- Statistik dekoratif editorial -->
-          <div class="lb-stats reveal d5">
-            <div class="stat-card">
-              <span class="stat-num">2<small>Bln</small></span>
-              <span class="stat-label">Durasi Magang</span>
+          <div class="rc-body">
+            <span class="rc-theme">MODERN CORPORATE GOVERNMENT</span>
+            <h3 class="rc-name">KPP PRATAMA<br>JAKARTA KEBAYORAN BARU SATU</h3>
+            <p class="rc-major">REKAYASA PERANGKAT LUNAK</p>
+            <div class="rc-meta">
+              <span class="rc-chip">NAVY</span>
+              <span class="rc-chip">WHITE</span>
+              <span class="rc-chip gold">GOLD</span>
             </div>
-            <div class="stat-divider"></div>
-            <div class="stat-card">
-              <span class="stat-num">3<small>Div</small></span>
-              <span class="stat-label">Rotasi Penempatan</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-card">
-              <span class="stat-num">100<small>%</small></span>
-              <span class="stat-label">Praktik Lapangan</span>
-            </div>
+            <span class="rc-cta">VIEW REPORT
+              <svg class="rc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </span>
           </div>
-        </div>
-        <div class="col-media">
-          <div class="media-frame reveal d2 tilt">
-            <div class="frame-decor"></div>
-            <img src="assets/img/suasana-kantor.jpg" alt="Suasana kantor" loading="lazy"
-              onerror="this.parentNode.classList.add('ph');this.remove()">
-            <div class="ph-content"><span class="ic" data-icon="camera"></span>
-              <p>Foto suasana kantor<br><small>ganti: assets/img/suasana-kantor.jpg</small></p>
-            </div>
-            <div class="media-caption">
-              <span class="cap-idx">FIG. 01</span>
-              <span class="cap-text">Suasana kerja profesional di lingkungan kantor KPP Pratama</span>
-            </div>
+        </a>
+
+        <!-- CARD 2 — POWER COMMERCE ASIA -->
+        <a class="report-card rc-pca" href="power-commerce.html" data-reveal
+          aria-label="Buka laporan PT Power Commerce Asia">
+          <div class="rc-thumb">
+            <img src="assets/img/power-commerce-preview.svg" alt="Visual teknologi & software testing" loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="rc-thumb-overlay pca"></div>
+            <span class="rc-index">REPORT <b>02</b></span>
+            <span class="rc-palette cyan" aria-hidden="true"><i></i><i></i><i></i></span>
           </div>
-          <div class="media-frame small reveal d3 tilt">
-            <div class="frame-decor"></div>
-            <img src="assets/img/aktivitas.jpg" alt="Aktivitas kerja" loading="lazy"
-              onerror="this.parentNode.classList.add('ph');this.remove()">
-            <div class="ph-content"><span class="ic" data-icon="folder"></span>
-              <p>Foto aktivitas kerja<br><small>ganti: assets/img/aktivitas.jpg</small></p>
+          <div class="rc-body">
+            <span class="rc-theme pca">FUTURISTIC DIGITAL TECHNOLOGY</span>
+            <h3 class="rc-name">PT POWER<br>COMMERCE ASIA</h3>
+            <p class="rc-major">REKAYASA PERANGKAT LUNAK</p>
+            <p class="rc-division">IT — QUALITY ASSURANCE</p>
+            <div class="rc-meta">
+              <span class="rc-chip pca">DARK</span>
+              <span class="rc-chip pca">BLUE</span>
+              <span class="rc-chip pca-c">ELECTRIC CYAN</span>
             </div>
-            <div class="media-caption">
-              <span class="cap-idx">FIG. 02</span>
-              <span class="cap-text">Aktivitas administrasi &amp; pengolahan data perpajakan</span>
-            </div>
+            <span class="rc-cta pca">VIEW REPORT
+              <svg class="rc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </span>
           </div>
-        </div>
+        </a>
+
       </div>
     </section>
 
-    <!-- ============ SLIDE 4 : TUJUAN ============ -->
-    <section class="slide" id="tujuan" data-title="Tujuan Magang">
-      <div class="slide-inner">
-        <header class="slide-head">
-          <div class="sec-label reveal"><span class="sec-num">04</span><span class="sec-slash">/</span><span
-              class="sec-name">SASARAN KEGIATAN</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Sasaran Kegiatan</p>
-          <h2 class="slide-title reveal d1">TUJUAN PELAKSANAAN <span class="gold-grad">MAGANG</span></h2>
-        </header>
-        <div class="goal-grid">
-          <div class="goal-card reveal d1">
-            <span class="goal-watermark">01</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="cap"></span></div>
-            <h3>Menerapkan Ilmu</h3>
-            <p>Menerapkan ilmu dan keterampilan yang diperoleh di sekolah ke dalam pekerjaan nyata.</p>
-          </div>
-          <div class="goal-card reveal d2">
-            <span class="goal-watermark">02</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="globe"></span></div>
-            <h3>Menambah Wawasan</h3>
-            <p>Menambah wawasan mengenai dunia kerja dan dinamika profesinya.</p>
-          </div>
-          <div class="goal-card reveal d3">
-            <span class="goal-watermark">03</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="bank"></span></div>
-            <h3>Memahami Instansi</h3>
-            <p>Memahami sistem kerja di lingkungan instansi pemerintahan.</p>
-          </div>
-          <div class="goal-card reveal d4">
-            <span class="goal-watermark">04</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="clock"></span></div>
-            <h3>Melatih Karakter</h3>
-            <p>Melatih kedisiplinan, tanggung jawab, dan sikap profesional.</p>
-          </div>
-          <div class="goal-card reveal d5">
-            <span class="goal-watermark">05</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="users"></span></div>
-            <h3>Komunikasi &amp; Tim</h3>
-            <p>Mengembangkan kemampuan komunikasi dan kerja sama tim.</p>
-          </div>
-          <div class="goal-card reveal d6">
-            <span class="goal-watermark">06</span>
-            <div class="goal-corner"></div>
-            <div class="goal-icon"><span class="ic" data-icon="puzzle"></span></div>
-            <h3>Pengalaman Kompetensi</h3>
-            <p>Memperoleh pengalaman kerja sesuai kompetensi.</p>
-          </div>
+    <!-- ================= ABOUT ================= -->
+    <section class="portal-section portal-about" id="about">
+      <div class="ps-head" data-reveal>
+        <p class="ps-sec-label"><span class="ps-num">02</span><span class="ps-slash">/</span><span class="ps-name">ABOUT
+            THIS PORTFOLIO</span><span class="ps-rule"></span></p>
+        <h2 class="ps-title">TENTANG <span class="ps-accent">PORTFOLIO INI</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-reveal>
+          <span class="about-num">01</span>
+          <h3>Dua Laporan, Satu Portal</h3>
+          <p>Website ini menyatukan dua laporan magang berbeda ke dalam satu portal utama, masing-masing dengan tema,
+            navigasi, dan konten tersendiri.</p>
+        </div>
+        <div class="about-card" data-reveal>
+          <span class="about-num">02</span>
+          <h3>Theme Terisolasi</h3>
+          <p>Setiap laporan menggunakan theme variable dan style tersendiri sehingga identitas visual tidak saling
+            mempengaruhi.</p>
+        </div>
+        <div class="about-card" data-reveal>
+          <span class="about-num">03</span>
+          <h3>Mudah Dijelajahi</h3>
+          <p>Pilih kartu laporan untuk membuka presentasi. Setiap laporan memiliki tombol kembali ke halaman pemilihan
+            ini.</p>
         </div>
       </div>
-    </section>
-
-    <!-- ============ SLIDE 5 : MANFAAT ============ -->
-    <section class="slide slide-alt" id="manfaat" data-title="Manfaat Magang">
-      <div class="slide-inner">
-        <header class="slide-head">
-          <div class="sec-label reveal"><span class="sec-num">05</span><span class="sec-slash">/</span><span
-              class="sec-name">NILAI KEGIATAN</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Nilai Kegiatan</p>
-          <h2 class="slide-title reveal d1">MANFAAT PELAKSANAAN <span class="gold-grad">MAGANG</span></h2>
-        </header>
-        <div class="benefit-grid">
-          <article class="benefit-card reveal d1">
-            <span class="benefit-watermark">01</span>
-            <div class="benefit-top"><span class="benefit-num">01</span>
-              <div class="benefit-icon"><span class="ic" data-icon="user"></span></div>
-            </div>
-            <h3>BAGI PESERTA MAGANG</h3>
-            <ul>
-              <li>Mendapatkan pengalaman kerja nyata.</li>
-              <li>Meningkatkan keterampilan dan pengetahuan.</li>
-              <li>Melatih tanggung jawab dan kedisiplinan.</li>
-              <li>Memahami budaya dan etika kerja.</li>
-            </ul>
-          </article>
-          <article class="benefit-card reveal d2 accent">
-            <span class="benefit-watermark">02</span>
-            <div class="benefit-top"><span class="benefit-num">02</span>
-              <div class="benefit-icon"><span class="ic" data-icon="school"></span></div>
-            </div>
-            <h3>BAGI INSTANSI PENDIDIKAN</h3>
-            <ul>
-              <li>Menjalin hubungan kerja sama dengan dunia industri.</li>
-              <li>Menyesuaikan pembelajaran dengan kebutuhan dunia kerja.</li>
-              <li>Mengevaluasi kemampuan dan kompetensi siswa.</li>
-              <li>Meningkatkan kualitas lulusan.</li>
-            </ul>
-          </article>
-          <article class="benefit-card reveal d3">
-            <span class="benefit-watermark">03</span>
-            <div class="benefit-top"><span class="benefit-num">03</span>
-              <div class="benefit-icon"><span class="ic" data-icon="briefcase"></span></div>
-            </div>
-            <h3>BAGI TEMPAT MAGANG</h3>
-            <ul>
-              <li>Membantu pelaksanaan kegiatan operasional.</li>
-              <li>Mendapatkan dukungan tenaga peserta magang.</li>
-              <li>Berkontribusi dalam pendidikan generasi muda.</li>
-              <li>Memperkenalkan lingkungan kerja profesional kepada siswa.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SLIDE 6,7,8 : DIVISI (template JS) ============ -->
-    <section class="slide" id="divisi-pelayanan" data-title="Divisi Pelayanan" data-divisi="Pelayanan">
-      <div class="slide-inner" data-division-slot></div>
-    </section>
-
-    <section class="slide slide-alt" id="divisi-p3" data-title="Divisi P3" data-divisi="P3">
-      <div class="slide-inner" data-division-slot></div>
-    </section>
-
-    <section class="slide" id="divisi-pengawasan" data-title="Divisi Pengawasan" data-divisi="Pengawasan">
-      <div class="slide-inner" data-division-slot></div>
-    </section>
-
-    <!-- ============ SLIDE 9 : KENDALA ============ -->
-    <section class="slide slide-alt" id="kendala" data-title="Kendala & Pemecahan">
-      <div class="slide-inner">
-        <header class="slide-head">
-          <div class="sec-label reveal"><span class="sec-num">09</span><span class="sec-slash">/</span><span
-              class="sec-name">TANTANGAN &amp; SOLUSI</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Tantangan Selama Magang</p>
-          <h2 class="slide-title reveal d1">KENDALA &amp; <span class="gold-grad">PEMECAHAN MASALAH</span></h2>
-        </header>
-        <div class="problem-wrap">
-          <div class="problem-col">
-            <h3 class="col-title kendala reveal d1"><span class="ic ic-inline" data-icon="warn"></span> Kendala</h3>
-            <div class="prob-item reveal d1"><span class="prob-num">01</span><span
-                class="prob-dot red"></span><span>Belum terbiasa dengan lingkungan kerja.</span></div>
-            <div class="prob-item reveal d2"><span class="prob-num">02</span><span
-                class="prob-dot red"></span><span>Kurangnya pemahaman terhadap istilah perpajakan.</span></div>
-            <div class="prob-item reveal d3"><span class="prob-num">03</span><span
-                class="prob-dot red"></span><span>Kesulitan memahami alur administrasi.</span></div>
-            <div class="prob-item reveal d4"><span class="prob-num">04</span><span
-                class="prob-dot red"></span><span>Adaptasi dengan sistem dan prosedur kerja.</span></div>
-            <div class="prob-item reveal d5"><span class="prob-num">05</span><span
-                class="prob-dot red"></span><span>Membutuhkan waktu untuk memahami tugas yang diberikan.</span></div>
-          </div>
-          <div class="problem-link">
-            <svg class="link-svg" viewBox="0 0 120 420" preserveAspectRatio="none" aria-hidden="true">
-              <path class="link-path" d="M0,40 C70,60 60,200 120,210 M0,210 H120 M0,380 C70,360 60,220 120,210"
-                fill="none" stroke="url(#lg)" stroke-width="2" />
-              <defs>
-                <linearGradient id="lg" x1="0" x2="1">
-                  <stop offset="0" stop-color="#e05c5c" />
-                  <stop offset="1" stop-color="#C8A45D" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="problem-col">
-            <h3 class="col-title solusi reveal d1"><span class="ic ic-inline" data-icon="check"></span> Pemecahan
-              Masalah</h3>
-            <div class="prob-item gold-item reveal d1"><span class="prob-num">01</span><span
-                class="prob-dot gold"></span><span>Beradaptasi dengan <b>lingkungan kerja</b>.</span></div>
-            <div class="prob-item gold-item reveal d2"><span class="prob-num">02</span><span
-                class="prob-dot gold"></span><span>Aktif <b>bertanya kepada pembimbing</b>.</span></div>
-            <div class="prob-item gold-item reveal d3"><span class="prob-num">03</span><span
-                class="prob-dot gold"></span><span>Mempelajari <b>prosedur dan materi</b> yang diberikan.</span></div>
-            <div class="prob-item gold-item reveal d4"><span class="prob-num">04</span><span
-                class="prob-dot gold"></span><span>Mencatat setiap <b>arahan dan tugas</b>.</span></div>
-            <div class="prob-item gold-item reveal d5"><span class="prob-num">05</span><span
-                class="prob-dot gold"></span><span>Meningkatkan <b>komunikasi serta kerja sama tim</b>.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SLIDE 10 : DOKUMENTASI ============ -->
-    <section class="slide" id="dokumentasi" data-title="Dokumentasi">
-      <div class="slide-inner">
-        <header class="slide-head">
-          <div class="sec-label reveal"><span class="sec-num">10</span><span class="sec-slash">/</span><span
-              class="sec-name">FIELD DOCUMENTATION</span><span class="sec-line"></span></div>
-          <p class="kicker reveal">Galeri Kegiatan</p>
-          <h2 class="slide-title reveal d1">DOKUMENTASI KEGIATAN <span class="gold-grad">MAGANG</span></h2>
-          <p class="slide-desc reveal d2">Foto dokumentasi kegiatan selama melaksanakan magang di KPP Pratama Jakarta
-            Kebayoran Baru Satu.</p>
-        </header>
-        <div class="gallery" id="gallery"><!-- diisi JS --></div>
-        <p class="gallery-hint reveal"><span class="ic ic-inline" data-icon="bulb"></span> Tambah / ubah foto pada file
-          <code>js/content.js</code> bagian <code>dokumentasi</code>, letakkan gambar di folder
-          <code>assets/img/</code>.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ SLIDE 11 : KESIMPULAN ============ -->
-    <section class="slide slide-closing" id="kesimpulan" data-title="Kesimpulan">
-      <div class="closing-bg parallax"></div>
-      <div class="closing-overlay"></div>
-      <div class="closing-stars reveal" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span></div>
-      <div class="slide-inner closing-inner">
-        <div class="sec-label reveal"><span class="sec-num">11</span><span class="sec-slash">/</span><span
-            class="sec-name">PENUTUP</span><span class="sec-line"></span></div>
-        <p class="kicker gold reveal">Penutup</p>
-        <h2 class="slide-title reveal d1">KESIMPULAN</h2>
-        <div class="closing-card reveal d2">
-          <div class="closing-quote-mark" aria-hidden="true">“</div>
-          <p>Kegiatan magang di <b>KPP Pratama Jakarta Kebayoran Baru Satu</b> memberikan pengalaman dan wawasan baru
-            mengenai dunia kerja, khususnya dalam lingkungan instansi pemerintahan di bidang perpajakan. Melalui
-            kegiatan ini, peserta magang dapat menerapkan pengetahuan yang diperoleh di sekolah, memahami proses
-            administrasi, meningkatkan kedisiplinan, tanggung jawab, serta kemampuan berkomunikasi dan bekerja sama.</p>
-          <p class="closing-quote">“Pengalaman hari ini menjadi bekal untuk menghadapi dunia kerja di masa depan.”</p>
-        </div>
-        <h3 class="thanks reveal d3">TERIMA <span class="gold-grad">KASIH</span></h3>
-        <p class="closing-end-tag reveal d4">END OF REPORT • KPP PRATAMA JAKARTA KEBAYORAN BARU SATU</p>
-        <div class="hero-cta reveal d5">
-          <button class="btn btn-gold nav-jump" data-target="beranda"><span class="ic ic-inline"
-              data-icon="arrowLeft"></span> Kembali ke Halaman Awal</button>
-          <button class="btn btn-ghost" id="btnPrint"><span class="ic ic-inline" data-icon="print"></span> Cetak /
-            Simpan PDF</button>
-        </div>
-      </div>
+      <a class="back-top" href="#top">↑ KEMBALI KE ATAS</a>
     </section>
 
   </main>
 
-  <!-- ================= PRESENTASI NAV ================= -->
-  <div class="pres-nav">
-    <button class="pres-btn" id="btnPrev" title="Sebelumnya (←)"><span class="ic" data-icon="arrowLeft"></span></button>
-    <button class="pres-btn" id="btnNext" title="Berikutnya (→)"><span class="ic"
-        data-icon="arrowRight"></span></button>
-  </div>
+  <footer class="portal-footer">
+    <p>INTERNSHIP REPORT • 2026 — Dibuat sebagai dokumentasi magang/industri siswa SMK.</p>
+  </footer>
 
-  <!-- ================= LIGHTBOX ================= -->
-  <div class="lightbox" id="lightbox">
-    <button class="lb-close" id="lbClose">×</button>
-    <button class="lb-arrow lb-prev" id="lbPrev">‹</button>
-    <figure class="lb-figure">
-      <img id="lbImg" src="" alt="">
-      <figcaption id="lbCap"></figcaption>
-    </figure>
-    <button class="lb-arrow lb-next" id="lbNext">›</button>
-  </div>
-
-  <script src="js/content.js"></script>
-  <script src="js/icons.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/portal.js"></script>
 </body>
 
 </html>
