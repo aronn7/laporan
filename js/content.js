@@ -17,28 +17,28 @@ const KONFIGURASI = {
       nis: "14454",
       jabatan: "Ketua Kelompok",
       divisi: "Pelayanan",          // opsi: "Pelayanan" | "P3" | "Pengawasan"
-      photo: "assets/img/anggota1.jpg"   // ganti dengan foto asli
+      photo: ""   // foto anggota dihapus — data diri saja
     },
     {
       nama: "Kaysia Putri Arifah",
       nis: "14441",
       jabatan: "Anggota",
       divisi: "Pelayanan",
-      photo: "assets/img/anggota2.jpg"
+      photo: ""
     },
     {
       nama: "Shafira Alya Prayitno",
       nis: "14456",
       jabatan: "Anggota",
       divisi: "P3",
-      photo: "assets/img/anggota3.jpg"
+      photo: ""
     },
     {
       nama: "Ahmad Rommy Qurniawan",
       nis: "14428",
       jabatan: "Anggota",
       divisi: "Pengawasan",
-      photo: "assets/img/anggota4.jpg"
+      photo: ""
     }
   ],
 
@@ -75,13 +75,6 @@ const KONFIGURASI = {
      caption= keterangan kegiatan
      ukuran = "kecil" | "sedang" | "besar" (menentukan tampilan masonry) */
   dokumentasi: [
-    { photo: "assets/img/dok1.jpg", caption: "Suasana kantor KPP Pratama Jakarta Kebayoran Baru Satu", ukuran: "besar" },
-    { photo: "assets/img/dok2.jpg", caption: "Kegiatan bersama pembimbing lapangan", ukuran: "sedang" },
-    { photo: "assets/img/dok3.jpg", caption: "Aktivitas administrasi di divisi Pelayanan", ukuran: "sedang" },
-    { photo: "assets/img/dok4.jpg", caption: "Kegiatan kelompok selama magang", ukuran: "kecil" },
-    { photo: "assets/img/dok5.jpg", caption: "Lingkungan kerja di dalam kantor", ukuran: "kecil" },
-    { photo: "assets/img/dok6.jpg", caption: "Kegiatan di divisi Pemeriksaan, Penilaian dan Penagihan", ukuran: "sedang" },
-    { photo: "assets/img/dok7.jpg", caption: "Kegiatan di divisi Pengawasan", ukuran: "kecil" },
-    { photo: "assets/img/dok8.jpg", caption: "Dokumentasi bersama seluruh anggota kelompok", ukuran: "besar" }
+    { photo: "assets/img/dok1.jpg", caption: "Suasana kantor KPP Pratama Jakarta Kebayoran Baru Satu", ukuran: "besar" }
   ]
 };

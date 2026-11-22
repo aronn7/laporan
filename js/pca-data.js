@@ -62,11 +62,6 @@ window.PCA_DATA = {
 
   /* ---------- 09. GALLERY ---------- */
   gallery: [
-    { photo: "assets/img/pca-dok1.jpg", caption: "Suasana kerja di divisi IT — Quality Assurance", ukuran: "besar" },
-    { photo: "assets/img/pca-dok2.jpg", caption: "Kegiatan pengujian bersama mentor QA", ukuran: "sedang" },
-    { photo: "assets/img/pca-dok3.jpg", caption: "Proses pencatatan bug dan dokumentasi", ukuran: "sedang" },
-    { photo: "assets/img/pca-dok4.jpg", caption: "Kegiatan magang di PT Power Commerce Asia", ukuran: "kecil" },
-    { photo: "assets/img/pca-dok5.jpg", caption: "Lingkungan kerja di kantor perusahaan", ukuran: "kecil" },
-    { photo: "assets/img/pca-dok6.jpg", caption: "Dokumentasi kegiatan bersama tim", ukuran: "sedang" }
+    { photo: "assets/img/pca-dok1.jpg", caption: "Suasana kerja di divisi IT — Quality Assurance", ukuran: "besar" }
   ]
 };
