@@ -10,12 +10,12 @@ window.PCA_DATA = {
 
   /* ---------- 02. MEET THE INTERN ---------- */
   intern: {
-    nama: "[Nama Lengkap Anda]",            // EDIT: nama lengkap
-    nis: "[NIS]",                           // EDIT: NIS
-    sekolah: "SMK [Nama Sekolah]",          // EDIT: nama sekolah
+    nama: "Nadya Budi Salsabilla",            // EDIT: nama lengkap
+    nis: "14451",                           // EDIT: NIS
+    sekolah: "SMK Negeri 20 Jakarta",          // EDIT: nama sekolah
     jurusan: "Rekayasa Perangkat Lunak",
     divisi: "IT — Quality Assurance",
-    periode: "[Jan 2026 – Feb 2026]",       // EDIT: periode magang
+    periode: "Okt 2026 – Nov 2026",       // EDIT: periode magang
     photo: "assets/img/pca-intern.jpg"      // EDIT: foto 3x4 (rasio 1:1)
   },
 
