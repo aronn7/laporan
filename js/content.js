@@ -75,6 +75,8 @@ const KONFIGURASI = {
      caption= keterangan kegiatan
      ukuran = "kecil" | "sedang" | "besar" (menentukan tampilan masonry) */
   dokumentasi: [
-    { photo: "assets/img/dok1.jpg", caption: "Suasana kantor KPP Pratama Jakarta Kebayoran Baru Satu", ukuran: "besar" }
+    { photo: "assets/img/dok1.jpg", caption: "Suasana kantor KPP Pratama Jakarta Kebayoran Baru Satu", ukuran: "besar" },
+    { photo: "assets/img/dok2.jpg", caption: "Kegiatan bersama pembimbing lapangan", ukuran: "sedang" },
+    { photo: "assets/img/dok3.jpg", caption: "Aktivitas administrasi di divisi Pelayanan", ukuran: "sedang" }
   ]
 };
